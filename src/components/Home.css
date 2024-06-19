@@ -1,0 +1,144 @@
+.container{
+    height: 80vh;
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parentdiv{
+    width: 25rem;
+    height: 24rem;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.parentdiv>div{
+    /* background-color: blueviolet; */
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.parentdiv>div>button{
+    width: 7rem;
+    height: 7rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(55, 74, 90);
+    cursor: pointer;
+    font-size: 5rem;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    animation: 0.3s;
+}
+
+@keyframes animate{
+    from{
+        transform: scale(1,1);
+        box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    }
+    to{
+        transform: scale(0.9, 0.9);
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0);
+    }
+}
+
+.parentdiv>div>button:hover{
+    background-color: rgb(45, 60, 72);
+}
+
+.resetDiv{
+    height: 5rem;
+    width: 10rem;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resetDiv>button{
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    border-radius: 10rem;    
+    background-color: rgb(55, 74, 90);
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px white;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    animation: 0.3s;
+}
+
+.resetDiv>button:hover{
+    background-color: rgb(45, 60, 72);
+}
+
+@media only screen and (max-width:321px){
+    .parentdiv{
+        width: 100%;
+        height: 19.5rem;
+    }
+    
+    .parentdiv>div{
+        width: 100%;
+        height: 19.5rem;
+
+    }
+    
+    .parentdiv>div>button{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    
+}
+
+@media only screen and (min-width:321px) and (max-width:376px){
+    .parentdiv{
+        width: 100%;
+        height: 22rem;
+    }
+    
+    .parentdiv>div{
+        width: 100%;
+        height: 22rem;
+
+    }
+    
+    .parentdiv>div>button{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    
+}
+
+@media only screen and (min-width:376px) and (max-width:426px){
+    .parentdiv{
+        width: 100%;
+        height: 24rem;
+    }
+    
+    .parentdiv>div{
+        width: 100%;
+        height: 24rem;
+
+    }
+    
+    .parentdiv>div>button{
+        width: 7rem;
+        height: 6.5rem;
+    }
+
+    
+}
